@@ -1,0 +1,203 @@
+/* hhttps://piccalil.li/blog/a-modern-css-reset/
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* end reset */
+
+* {
+  /* box-sizing: border-box; */
+  max-width: 100%;
+  /*put a border around everything to see where it stops and starts*/
+  /*border: 1px solid red; /* try border shadow instead ? */
+  /*outline: 1px solid red;*/
+  font-family: "Roboto Mono", monospace;
+}
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+
+ /* helpers */
+.air2 {
+  margin: 2rem;
+}
+.air1 {
+  margin: 1rem;
+}
+
+.olg {
+  outline: 1px solid green;
+}
+
+.olr {
+  outline: 1px solid red;
+}
+
+.air-top3 {
+  margin-top: 3rem;
+}
+
+.air-bottom3 {
+  margin-bottom: 3rem;
+}
+
+/* structure */
+
+/*header / nav*/
+
+
+header nav{
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem 5rem 0 ;
+}
+
+header nav a {
+    padding: .8rem;
+    display: inline-block;
+    border-radius: .5rem;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    margin: 0c 2rem;
+    width:auto;
+    
+    
+  }
+  
+  .container header nav a:hover {
+    /*======= create a background property and set it to white.  Then create a color property and set it's value to pink. */
+    background-color: white;
+    color: pink;
+  }
+
+
+
+.intro {
+  text-align: center;
+}
+
+.img-crop {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  margin: 1rem 2rem;
+}
+
+.img-crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub-header {
+  
+}
+
+.intro h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.intro h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 25rem;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Chelsea Market", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 10rem;
+}
+
+.spacer {
+  display: block;
+  height: 10vh;
+}
+
+.descr{
+    background-color: rgb(203, 206, 173);
+
+}
